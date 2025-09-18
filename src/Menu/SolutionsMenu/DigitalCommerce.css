@@ -1,0 +1,436 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f5f7fa, #e6ebf3);
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: #fff;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0, 170, 255, 0.4);
+  transition: all 0.4s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 170, 255, 0.6);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 10%;
+  background: linear-gradient(120deg, #e0f7ff, #f9fbff);
+  border-radius: 0 0 60px 60px;
+  box-shadow: 0 10px 30px rgba(0, 150, 255, 0.1);
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 52px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s ease;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.hero-img img {
+  max-width: 450px;
+  border-radius: 25px;
+  box-shadow: 0 20px 40px rgba(0, 120, 255, 0.25);
+  transform: perspective(1000px) rotateY(-10deg);
+  transition: all 0.6s ease;
+}
+
+.hero-img img:hover {
+  transform: perspective(1000px) rotateY(0deg) scale(1.05);
+}
+
+/* Features */
+.features {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: #111;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0, 100, 255, 0.1);
+  transition: all 0.4s ease;
+  transform: perspective(800px) rotateX(0deg);
+}
+
+.feature-card:hover {
+  transform: perspective(800px) rotateX(5deg) translateY(-8px) scale(1.03);
+  box-shadow: 0 15px 40px rgba(0, 100, 255, 0.25);
+}
+
+.feature-card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+/* Traffic Section */
+.traffic {
+  padding: 100px 10%;
+  background: linear-gradient(135deg, #f9fbff, #eef6ff);
+  border-radius: 60px;
+  margin: 60px auto;
+}
+
+.traffic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.traffic-card {
+  padding: 25px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 120, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.traffic-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0, 120, 255, 0.25);
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.testimonial-grid {
+  display: flex;
+  gap: 30px;
+  padding-left: 200px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  max-width: 400px;
+  box-shadow: 0 8px 25px rgba(0, 120, 255, 0.15);
+  font-style: italic;
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05) rotate(-1deg);
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 100px 10%;
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  color: white;
+  border-radius: 40px;
+  margin: 60px 5%;
+  box-shadow: 0 20px 40px rgba(0, 120, 255, 0.3);
+}
+
+.cta h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #f0f9ff;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.features {
+  padding: 80px 10%;
+  background: #f9fafc;
+  text-align: center;
+}
+
+.features-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #222;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.icon-circle {
+  font-size: 32px;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8f4ff;
+  color: #007bff;
+  border-radius: 50%;
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.feature-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+.cta {
+  padding: 100px 10%;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Floating background animation */
+.cta::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.15) 20%, transparent 70%);
+  animation: floatBg 10s infinite linear;
+}
+
+@keyframes floatBg {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.cta-content {
+  position: relative;
+  z-index: 2;
+}
+
+.cta h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  animation: fadeDown 1s ease;
+}
+
+.cta p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeUp 1.2s ease;
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Button Style */
+.cta-btn {
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  background: #fff;
+  color: #007bff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-btn::after {
+  content: "";
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: rgba(0, 123, 255, 0.2);
+  transition: left 0.4s;
+}
+
+.cta-btn:hover::after {
+  left: 0;
+}
+
+.cta-btn:hover {
+  background: #f9f9f9;
+  color: #0056b3;
+  transform: scale(1.05);
+}
+.traffic {
+  text-align: center;
+  padding: 80px 10%;
+  background: linear-gradient(135deg, #f9fafc, #eef3f7);
+}
+
+.traffic-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.traffic-subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.traffic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.traffic-card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.traffic-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.traffic-card h3 {
+  margin: 15px 0 10px;
+  font-size: 22px;
+  color: #333;
+}
+
+.traffic-card p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  animation: bounce 2s infinite;
+}
+
+/* Subtle bounce effect for icons */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #f5f7fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px auto; /* centers the icon */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.icon-circle:hover {
+  transform: scale(1.1);
+}
