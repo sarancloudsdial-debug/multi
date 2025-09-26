@@ -32,7 +32,7 @@ const App = () => {
       <Header />
         <ScrollToTop />   {/* ✅ Added */}
       <Routes>
-        <Route path="/" element={<Home />} />        
+        <Route path="/multi" element={<Home />} />        
         <Route path="/demo" element={<DemoPage />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/freeTrail" element={<FreeTrail />} />
