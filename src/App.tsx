@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import ScrollToTop from "./component/ScrollToTop"; // ✅ import  
 import Header from "./component/Header";
 import Footer from "./component/Footer";
@@ -31,7 +31,8 @@ const App = () => {
       <Header />
         <ScrollToTop />   {/* ✅ Added */} 
       <Routes>
-        <Route path="/" element={<Home />} />         
+       <Route path="/" element={<Home />} />
+    
         <Route path="/demo" element={<DemoPage />} />
         <Route path="/pricing" element={<Pricing />} /> 
         <Route path="/freeTrail" element={<FreeTrail />} />
@@ -51,6 +52,8 @@ const App = () => {
         <Route path="/BroadCast" element={<BroadCast/>}/>
         <Route path="/ClicktoWhatsapp"element={<ClicktoWhatsapp/>}/>
         <Route path="/Teaminbox" element={<Teaminbox/>}/>
+              {/* Redirect via navigate */}
+        <Route path="*" element={<Navigate to="/" replace/>}/>
       </Routes>
       <Footer />
     </Router>
