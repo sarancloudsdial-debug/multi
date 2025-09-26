@@ -27,7 +27,7 @@ import Teaminbox from "./Menu/Product/Teaminbox";
 
 const App = () => {
   return (
-    <Router>
+  <div>
       <Header />
         <ScrollToTop />   {/* ✅ Added */} 
       <Routes>
@@ -56,7 +56,9 @@ const App = () => {
         <Route path="*" element={<Navigate to="/" replace/>}/>
       </Routes>
       <Footer />
-    </Router>
+
+      </div>
+  
   );
 };
 
