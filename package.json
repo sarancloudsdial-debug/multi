@@ -3,7 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
- "homepage": "https://sarancloudsdial-debug.github.io/multi/",
+ "homepage": "https://sarancloudsdial-debug.github.io/multi",
+
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
