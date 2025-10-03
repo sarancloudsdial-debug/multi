@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route ,Navigate } from "react-router-dom";
 import ScrollToTop from "./component/ScrollToTop";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
@@ -34,45 +34,43 @@ import Teaminbox from "./Menu/Product/Teaminbox";
 
 const App = () => {
   return (
-    <Router>
+    <div>
       <Header />
       <ScrollToTop />
-
-      <Routes>
-        {/* Default Home Page */}
-        <Route path="/" element={<Home />} />
-        <Route path="/multi" element={<Home />} />
-
-        {/* Pages */}
+<Routes>
+        <Route path="/" element={<Home />} />        
         <Route path="/demo" element={<DemoPage />} />
         <Route path="/pricing" element={<Pricing />} />
-        <Route path="/free-trial" element={<FreeTrail />} />
-        <Route path="/login" element={<Login />} />
-
-        {/* Resources */}
-        <Route path="/help" element={<HelpCenter />} />
-        <Route path="/blog" element={<Blogs />} />
-
-        {/* Solutions */}
-        <Route path="/multipi-growth" element={<Growth />} />
-        <Route path="/multipi-crm" element={<MultipiCrm />} />
-        <Route path="/multipi-assist" element={<MultipiAssist />} />
-        <Route path="/online-education" element={<OnlineEducation />} />
-        <Route path="/digital-commerce" element={<DigitalCommerce />} />
-        <Route path="/branding-agencies" element={<BrandingAgencies />} />
-        <Route path="/medical-service" element={<MedicalService />} />
-
+        <Route path="/freeTrail" element={<FreeTrail />} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/help" element={<HelpCenter/>}/>
+        <Route path="/blog" element={<Blogs/>}/>
+          {/* Solutions */}
+        <Route path="/Multipigrowth" element={<Growth/>} /> {/* Growth page */}
+        <Route path="/MultipiCrm" element={<MultipiCrm/>} /> {/* Growth page */}
+        <Route path="/Multipiassist" element={<MultipiAssist/>} />
+        <Route path="/OnlineEducation" element={<OnlineEducation/>}/>
+        <Route path="/DigitalCommerce" element={<DigitalCommerce/>}/>
+        <Route path="/brandingAgencies" element={<BrandingAgencies/>}/>
+        <Route path="/MedicalService" element={<MedicalService/>}/>
+ 
         {/* Products */}
-        <Route path="/ai-support" element={<AiSupport />} />
-        <Route path="/chatbot" element={<ChatBotAutomation />} />
-        <Route path="/instagram-facebook" element={<InstagramFaceBook />} />
-        <Route path="/broadcast" element={<BroadCast />} />
-        <Route path="/click-to-whatsapp" element={<ClicktoWhatsapp />} />
-        <Route path="/team-inbox" element={<Teaminbox />} />
+ 
+        <Route path="/Aisupport" element={<AiSupport/>}/>
+        <Route path="/Chatbot" element={<ChatBotAutomation/>}/>
+        <Route path="/InstgramFaceBook" element={<InstagramFaceBook/>}/>
+        <Route path="/BroadCast" element={<BroadCast/>}/>
+        <Route path="/ClicktoWhatsapp"element={<ClicktoWhatsapp/>}/>
+        <Route path="/Teaminbox" element={<Teaminbox/>}/>
+ 
+         <Route path="*" element={<Navigate to="/" replace />} />
+       
+       
       </Routes>
+ 
 
       <Footer />
-    </Router>
+    </div>
   );
 };
 
