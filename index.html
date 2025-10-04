@@ -5,10 +5,19 @@
     <link rel="icon" type="image/svg+xml" href="/multi/assets/logo-Cyz11NAM.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Multipi</title>
-    <script type="module" crossorigin src="/multi/assets/index-B3wpRCCi.js"></script>
+    <script type="module" crossorigin src="/multi/assets/index-C1zROut7.js"></script>
     <link rel="stylesheet" crossorigin href="/multi/assets/index-DHfrJZ4i.css">
   </head>
   <body>
     <div id="root"></div>
+    <script>
+   (function() {
+    var params = new URLSearchParams(window.location.search);
+    var redirect = params.get("redirect");
+    if (redirect) {
+      window.history.replaceState(null, "", redirect);
+    }
+   })();
+</script>
   </body>
 </html>
