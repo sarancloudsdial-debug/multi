@@ -1,0 +1,30 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { Routes, Route, Navigate } from "react-router-dom";
+import ScrollToTop from "./component/ScrollToTop"; // ✅ import  
+import Header from "./component/Header";
+import Footer from "./component/Footer";
+import Home from "./pages/Home";
+import Pricing from "./pages/Pricing";
+import DemoPage from "./pages/Demo";
+import FreeTrail from "./pages/FreeTrail";
+import Login from "./pages/login";
+import HelpCenter from "./Menu/Resources/HelpCenter";
+import Blogs from "./Menu/Resources/Blogs";
+import Growth from "./Menu/SolutionsMenu/Growth";
+// import MultipiCrm from "./Menu/SolutionsMenu/MultipiAssist";
+import MultipiAssist from "./Menu/SolutionsMenu/MultipiAssist";
+import OnlineEducation from "./Menu/SolutionsMenu/OnlineEducation";
+import MultipiCrm from "./pages/MultipiCrm";
+import DigitalCommerce from "./Menu/SolutionsMenu/DigitalCommerce";
+import BrandingAgencies from "./Menu/SolutionsMenu/BrandingAgencies";
+import MedicalService from "./Menu/SolutionsMenu/MedicalService";
+import AiSupport from "./Menu/Product/Ai-support";
+import ChatBotAutomation from "./Menu/Product/ChatbotAutomation";
+import InstagramFaceBook from "./Menu/Product/InstagramFaceBook";
+import BroadCast from "./Menu/Product/BroadCast";
+import ClicktoWhatsapp from "./Menu/Product/Clicktowhatsapp";
+import Teaminbox from "./Menu/Product/Teaminbox";
+const App = () => {
+    return (_jsxs("div", { children: [_jsx(Header, {}), _jsx(ScrollToTop, {}), "   ", _jsxs(Routes, { children: [_jsx(Route, { path: "/", element: _jsx(Home, {}) }), _jsx(Route, { path: "/demo", element: _jsx(DemoPage, {}) }), _jsx(Route, { path: "/pricing", element: _jsx(Pricing, {}) }), _jsx(Route, { path: "/freeTrail", element: _jsx(FreeTrail, {}) }), _jsx(Route, { path: "/login", element: _jsx(Login, {}) }), _jsx(Route, { path: "/help", element: _jsx(HelpCenter, {}) }), _jsx(Route, { path: "/blog", element: _jsx(Blogs, {}) }), _jsx(Route, { path: "/Multipigrowth", element: _jsx(Growth, {}) }), " ", _jsx(Route, { path: "/MultipiCrm", element: _jsx(MultipiCrm, {}) }), " ", _jsx(Route, { path: "/Multipiassist", element: _jsx(MultipiAssist, {}) }), _jsx(Route, { path: "/OnlineEducation", element: _jsx(OnlineEducation, {}) }), _jsx(Route, { path: "/DigitalCommerce", element: _jsx(DigitalCommerce, {}) }), _jsx(Route, { path: "/brandingAgencies", element: _jsx(BrandingAgencies, {}) }), _jsx(Route, { path: "/MedicalService", element: _jsx(MedicalService, {}) }), _jsx(Route, { path: "/Aisupport", element: _jsx(AiSupport, {}) }), _jsx(Route, { path: "/Chatbot", element: _jsx(ChatBotAutomation, {}) }), _jsx(Route, { path: "/InstgramFaceBook", element: _jsx(InstagramFaceBook, {}) }), _jsx(Route, { path: "/BroadCast", element: _jsx(BroadCast, {}) }), _jsx(Route, { path: "/ClicktoWhatsapp", element: _jsx(ClicktoWhatsapp, {}) }), _jsx(Route, { path: "/Teaminbox", element: _jsx(Teaminbox, {}) }), _jsx(Route, { path: "*", element: _jsx(Navigate, { to: "/", replace: true }) })] }), _jsx(Footer, {})] }));
+};
+export default App;
